@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css'>
+</head>
+<body>
+    <div class="container">
+        <div id="bar">
+            <button class="btn">Distance<span>
+                    <i class="fas fa-angle-down arrow"></i>
+            </span></button
+                ><div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Category
+                    <span><i class="fas fa-angle-down arrow"></i></span>
+                </button>
+            </div>
+                <!-- Main Dropdown Menu -->
+                <div id="mainDropdown" >
+                    <div id="firstDropdown" class="dropdown-content" >
+                        <a id="equipproducts" class="firstmenu" href="#" onclick="menuAnimation(epmenu,firstDropdown)">equipment & product
+                            <span><i class="fas fa-angle-right right_arrow"></i></span>
+                        </a>
+                        <a class="firstmenu" href="#" onclick="menuAnimation(expertmenu,firstDropdown)">expertise
+                            <span><i class="fas fa-angle-right right_arrow"></i></span>
+                        </a>
+                        <a class="firstmenu" href="#" onclick="menuAnimation(humres,firstDropdown)">human resources
+                            <span><i class="fas fa-angle-right right_arrow"></i></span>
+                        </a>
+                        <a class="firstmenu" href="#" onclick="menuAnimation(reales,firstDropdown)">real estate
+                            <span><i class="fas fa-angle-right right_arrow"></i></span>
+                        </a>
+                    </div>
+                    
+                    <!-- 1 Equip-Products Menu -->
+                    <div id="epmenu" class="dropdown-content menu" style="transform: translateX(100%);">
+                        <a id="eptop" class="top" href="#" onclick="backAnimation(firstDropdown,epmenu)"><span><i class="fas fa-angle-left left_arrow"></i></span><strong>equipment & product</strong>
+                        </a>
+                        <a id="electronics" class="clearfix" href="#" onclick="menuAnimation()">
+                           electronics<span><i class="fas fa-angle-right right_arrow"></i></span>
+                        </a>
+                        <a id="eqptools" href="#" onclick="menuAnimation()">
+                                equipment & tools<span><i class="fas fa-angle-right right_arrow"></i></span>
+                        </a>
+                        <a id="inventory" href="#" onclick="menuAnimation()">
+                                inventory<span><i class="fas fa-angle-right right_arrow"></i></span>
+                        </a>
+                        <a id="machinery" href="#" onclick="menuAnimation()">
+                                machinery<span><i class="fas fa-angle-right right_arrow"></i></span>
+                        </a>
+                        <a id="mathandeqp" href="#" onclick="menuAnimation()">
+                                material handling equipment<span><i class="fas fa-angle-right right_arrow"></i></span>
+                        </a>
+                        <a id="rawmat" href="#" onclick="menuAnimation()">
+                                raw material<span><i class="fas fa-angle-right right_arrow"></i></span>
+                        </a>
+                        <a id="supplies" href="#" onclick="menuAnimation()">
+                                supplies<span><i class="fas fa-angle-right right_arrow"></i></span>
+                        </a>
+                        <a id="vehicles" href="#" onclick="menuAnimation()">
+                                vehicles<span><i class="fas fa-angle-right right_arrow"></i></span>
+                        </a>
+                        <a id="other" href="#" onclick="menuAnimation()">
+                                other<span><i class="fas fa-angle-right right_arrow"></i></span>
+                        </a>
+                    </div>
+                    <!-- 1 End of Equip-Products Menu -->
+
+                    <!-- 2 Expertise Menu -->
+                    <div id="expertmenu" class="dropdown-content menu" style="transform: translateX(100%);">
+                        <a id="eptop" class="top" href="#" onclick="backAnimation(firstDropdown,expertmenu)"
+                            ><span><i class="fas fa-angle-left left_arrow"></i></span>
+                            <strong>expertise</strong>
+                        </a>
+                        <a id="customman" href="#" onclick="menuAnimation()">
+                            custom manufacturing<span><i class="fas fa-angle-right right_arrow"></i></span>
+                        </a>
+                        <a id="envserv" href="#" onclick="menuAnimation()">
+                            environmental services<span><i class="fas fa-angle-right right_arrow"></i></span>
+                        </a>
+                        <a id="industpro" href="#" onclick="menuAnimation()">
+                            industrial processes<span><i class="fas fa-angle-right right_arrow"></i></span>
+                        </a>
+                        <a id="machmetal" href="#" onclick="menuAnimation()">
+                            machine & metalworking<span><i class="fas fa-angle-right right_arrow"></i></span>
+                        </a>
+                        <a id="mainrepair" href="#" onclick="menuAnimation()">
+                            maintenance & repair<span><i class="fas fa-angle-right right_arrow"></i></span>
+                        </a>
+                        <a id="proserv" href="#" onclick="menuAnimation()">
+                            professional services<span><i class="fas fa-angle-right right_arrow"></i></span>
+                        </a>
+                        <a id="tranlog" href="#" onclick="menuAnimation()">
+                            transport & logistics<span><i class="fas fa-angle-right right_arrow"></i></span>
+                        </a>
+                        <a id="expother" href="#" onclick="menuAnimation()">
+                            other<span><i class="fas fa-angle-right right_arrow"></i></span>
+                        </a>
+                    </div>
+                    <!-- 2 End of Expertise Menu -->
+                    
+                    <!-- 3 Human Resources Menu -->
+                    <div id="humres" class="dropdown-content menu" style="transform: translateX(100%);">
+                        <a id="eptop" class="top" href="#" onclick="backAnimation(firstDropdown,humres)">
+                            <span><i class="fas fa-angle-left left_arrow"></i></span>
+                            <strong>human resources</strong>
+                        </a>
+                    </div>
+                    <!-- 3 End of Human Resources Menu -->
+
+                    <!-- 4 Real Estate Menu -->
+                    <div id="reales" class="dropdown-content menu" style="transform: translateX(100%);">
+                        <a id="eptop" class="top" href="#" onclick="backAnimation(firstDropdown,reales)">
+                            <span><i class="fas fa-angle-left left_arrow"></i></span>
+                            <strong>real estate</strong>
+                        </a>
+                        <a id="facility" href="#" onclick="menuAnimation()">
+                            facility<span><i class="fas fa-angle-right right_arrow"></i></span>
+                        </a>
+                        <a id="offconf" href="#" onclick="menuAnimation()">
+                            office & conference room<span><i class="fas fa-angle-right right_arrow"></i></span>
+                        </a>
+                        <a id="parking" href="#" onclick="menuAnimation()">
+                            parking space<span><i class="fas fa-angle-right right_arrow"></i></span>
+                        </a>
+                        <a id="warehouse" href="#" onclick="menuAnimation()">
+                            warehouse & storage<span><i class="fas fa-angle-right right_arrow"></i></span>
+                        </a>
+                        <a id="estateother" href="#" onclick="menuAnimation()">
+                            other<span><i class="fas fa-angle-right right_arrow"></i></span>
+                        </a>
+                    </div>
+                    <!-- 4 End of Real Estate Menu -->
+                    </div>
+                </div>
+    </div>
+
+      <script src="js/custom.js" type="text/javascript" charset="utf-8"></script>
+      <script src="js/jquery-3.4.1.js"></script>  
+</body>
+</html>
